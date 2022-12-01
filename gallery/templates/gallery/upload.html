@@ -1,0 +1,17 @@
+{% load static %}
+
+{#<form method="POST" enctype="multipart/form-data">#}
+{#    {% csrf_token %}#}
+{#    <input type="text" name="title">#}
+{#    <input type="text" name="content">#}
+{#    <input type="file" name="imgs" accept=".jpg,png">#}
+{#    <input type="submit" value="작성하기">#}
+{#</form>#}
+
+
+
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+   {{ form.as_p }}
+<button type="submit">Submit</button>
+</form>
